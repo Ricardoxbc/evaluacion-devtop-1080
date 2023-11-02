@@ -1,0 +1,107 @@
+/* MAIN CONTENT */
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  width: 50%;
+}
+
+main .info > h2 {
+  font-size: 3.5vw;
+  font-weight: bold;
+  line-height: 1.1em;
+}
+
+main .info > small {
+  width: 70%;
+  font-size: 1vw;
+}
+
+main .info .buttons {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 1em;
+}
+
+main .info .social-media {
+  margin-top: 2.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  font-weight: bold;
+  gap: 1em;
+}
+main .info .social-media svg {
+  cursor: pointer;
+}
+main .info .social-media svg:hover {
+  color: var(--main-color);
+  transform: scale(1.25);
+}
+
+main .side-image {
+  width: 50%;
+}
+
+main .side-image img {
+  width: 100%;
+  height: auto;
+}
+
+
+@media screen and (min-width: 2000px) {
+  main .info h2 {
+    font-size: 3em;
+  }
+
+  main .info small {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main .info{
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+  main .info {
+    width: 100%;
+    margin-top: 3em;
+    align-items: center;
+    text-align: center;
+    gap: 3em;
+  }
+
+  main .info h2 {    
+    font-size: 2.5em;
+  }
+  main .info small {    
+    font-size: 1em;
+  }
+  main .side-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .info {
+    font-size: 0.65em;
+  }
+}
+/* END MAIN CONTENT */
